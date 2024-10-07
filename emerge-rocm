@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo emerge -a \
+     rocm-smi \
+     rocminfo \
+     rocm-opencl-runtime
