@@ -9,4 +9,5 @@ docker run -it \
        --group-add video \
        --ipc=host \
        --shm-size 8G \
+       --mount type=bind,source="$(pwd)/$1",target=/$1 \
        rocm/pytorch:latest
